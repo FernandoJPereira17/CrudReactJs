@@ -1,6 +1,8 @@
 import { Outlet } from "react-router";
+import ModalRender from "../components/ModalRender";
 
 export function HomeLayout() {
+
   return (
     <>
       <header className="flex shadow border-b h-[15vh] max-h-[80px] px-4 justify-between items-center">
@@ -12,6 +14,7 @@ export function HomeLayout() {
         </ul>
       </header>
       <main className="px-16 py-6 bg-slate-100 min-h-[85vh]">
+        <ModalRender />
         <Outlet />
       </main>
     </>

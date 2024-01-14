@@ -6,6 +6,7 @@ export function Table({ columns, data }) {
     <table>
       <TableHeader header={columns} />
       <TableBody rows={data} />
+      
     </table>
   );
 }
